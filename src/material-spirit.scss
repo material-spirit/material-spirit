@@ -1,0 +1,29 @@
+//@use 'sass:map';
+@use './breakpoints' as bp;
+@use './flex';
+@use './display';
+@use './spacing';
+
+
+// Styles without breakpoints
+@include flex.core-styles();
+@include display.core-styles();
+@include spacing.core-styles();
+
+
+// Breakpoint-specific styles
+@each $bp in bp.$compile-breakpoints {
+  @include bp.media-query($bp) {
+    @include flex.core-styles($bp);
+    //@include border.core-styles($breakpoint);
+    @include display.core-styles($bp);
+    @include spacing.core-styles($bp);
+  }
+}
+
+
+// @include bp.media-query(tablet) {
+//   .test-tablet-class {
+//     color: red;
+//   }
+// }

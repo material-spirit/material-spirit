@@ -1,0 +1,36 @@
+// https://github.com/material-components/material-components-web/blob/master/packages/mdc-layout-grid/_variables.scss
+// $breakpoints-mdc: (
+//   desktop: ...,
+//   tablet: ...,
+//   phone: ...,
+// );
+
+
+// *** Device-based breakpoints
+// https://material.angular.io/cdk/layout/overview
+$ng-mat-breakpoints: (
+  handset: '(max-width: 599.98px) and (orientation: portrait), (max-width: 959.98px) and (orientation: landscape)',
+  handset-portrait: '(max-width: 599.98px) and (orientation: portrait)',
+  handset-landscape: '(max-width: 959.98px) and (orientation: landscape)',
+
+  tablet: '(min-width: 600px) and (max-width: 839.98px) and (orientation: portrait), (min-width: 960px) and (max-width: 1279.98px) and (orientation: landscape)',
+  tablet-down: '(max-width: 839.98px) and (orientation: portrait), (max-width: 1279.98px) and (orientation: landscape)',
+  tablet-up: '(min-width: 600px) and (orientation: portrait), (min-width: 960px) and (orientation: landscape)',
+  tablet-portrait: '(min-width: 600px) and (max-width: 839.98px) and (orientation: portrait)',
+  tablet-landscape: '(min-width: 960px) and (max-width: 1279.98px) and (orientation: landscape)',
+
+  web: '(min-width: 840px) and (orientation: portrait), (min-width: 1280px) and (orientation: landscape)',
+  web-portrait: '(min-width: 840px) and (orientation: portrait)',
+  web-landscape: '(min-width: 1280px) and (orientation: landscape)',
+
+  xs: '(max-width: 599.98px)',
+  sm: '(min-width: 600px) and (max-width: 959.98px)',
+  md: '(min-width: 960px) and (max-width: 1279.98px)',
+  lg: '(min-width: 1280px) and (max-width: 1919.98px)',
+  xl: '(min-width: 1920px)'
+);
+
+$ng-mat-compile-breakpoints: handset, tablet, web;
+
+
+

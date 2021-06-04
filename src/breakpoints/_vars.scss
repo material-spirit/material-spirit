@@ -1,0 +1,4 @@
+@use './bp-presets';
+
+$breakpoints: bp-presets.$ng-mat-breakpoints !default;
+$compile-breakpoints: bp-presets.$ng-mat-compile-breakpoints !default;

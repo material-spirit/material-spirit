@@ -1,0 +1,12 @@
+@use 'sass:map';
+@use './vars';
+
+@mixin media-query($bp) {
+  @if not map.has-key(vars.$breakpoints, $bp) {
+    @error "Invalid breakpoint specified! Choose one of #{map.keys(vars.$breakpoints)}";
+  }
+
+  @media #{map.get(vars.$breakpoints, $bp)} {
+    @content;
+  }
+}

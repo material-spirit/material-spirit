@@ -1,0 +1,31 @@
+$grow-shrink-types: grow, shrink;
+$grow-shrink-values: 0, 1;
+
+@mixin core-styles($breakpoint: null) {
+  @if($breakpoint) {
+    @each $type in $grow-shrink-types {
+      @each $value in $grow-shrink-values {
+        .mas-flex-#{$type}--#{$value}-#{$breakpoint} {
+          flex-#{$type}: $value !important;
+        }
+      }
+    }
+  } @else {
+    .mas-flex-grow {
+      flex-grow: 1 !important;
+    }
+
+    .mas-flex-grow-0 {
+      flex-grow: 0 !important;
+    }
+
+    .mas-flex-shrink {
+      flex-shrink: 1 !important;
+    }
+
+    .mas-flex-shrink-0 {
+      flex-shrink: 0 !important;
+    }
+  }
+}
+
