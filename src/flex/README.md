@@ -8,7 +8,15 @@
 - `.mas-items-baseline`
 - `.mas-items-stretch`
 
-Breakpoint-specific classes available. Example: `.mas-items-start-tablet`
+Also breakpoint-specific classes available. Example: `.mas-items-start-tablet`
 
 ---
 
+[Justify Content](https://tailwindcss.com/docs/justify-content) classes:
+- `.mas-justify-end`
+- `.mas-justify-center`
+- `.mas-justify-between`
+- `.mas-justify-around`
+- `.mas-justify-evenly`
+
+Also breakpoint-specific classes available. Example: `.mas-justify-center-web`
