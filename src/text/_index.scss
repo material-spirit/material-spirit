@@ -1,0 +1,18 @@
+$text-align-values: left, center, right, justify !default;
+
+
+@mixin core-styles($breakpoint: null) {
+  @if($breakpoint) {
+    @each $align in $text-align-values {
+      .mas-text-#{$align}-#{$breakpoint} {
+        text-align: $align !important;
+      }
+    }
+  } @else {
+    @each $align in $text-align-values {
+      .mas-text-#{$align} {
+        text-align: $align !important;
+      }
+    }
+  }
+}

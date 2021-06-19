@@ -23,3 +23,4 @@ The library has no dependecy on the mentioned frameworks. It just doesn't repeat
 2. material-spirit/display
 3. material-spirit/flex
 4. material-spirit/spacing
+5. material-spirit/text

@@ -3,12 +3,14 @@
 @use './flex';
 @use './display';
 @use './spacing';
+@use './text';
 
 
 // Styles without breakpoints
 @include flex.core-styles();
 @include display.core-styles();
 @include spacing.core-styles();
+@include text.core-styles();
 
 
 // Breakpoint-specific styles
@@ -18,6 +20,7 @@
     //@include border.core-styles($breakpoint);
     @include display.core-styles($bp);
     @include spacing.core-styles($bp);
+    @include text.core-styles($bp);
   }
 }
 
