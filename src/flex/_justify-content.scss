@@ -1,0 +1,17 @@
+$justify-content-values: end, center, between, around, evenly;
+
+@mixin core-styles($breakpoint: null) {
+  @if($breakpoint) {
+    @each $align in $justify-content-values {
+      .mas-justify-#{$align}-#{$breakpoint} {
+        justify-content: $align !important;
+      }
+    }
+  } @else {
+    @each $align in $justify-content-values {
+      .mas-justify-#{$align} {
+        justify-content: $align !important;
+      }
+    }
+  }
+}
