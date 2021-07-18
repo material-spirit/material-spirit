@@ -1,6 +1,13 @@
 # material-spirit/flex-and-grid
 
 
+[Flex Direction](https://tailwindcss.com/docs/flex-direction) classes:
+- `.mas-flex-row`
+- `.mas-flex-row-reverse`
+- `.mas-flex-col`
+- `.mas-flex-col-reverse`
+
+
 [Align items](https://tailwindcss.com/docs/align-items) classes:
 - `.mas-items-start`
 - `.mas-items-end`

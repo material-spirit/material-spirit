@@ -1,11 +1,11 @@
 {
   "name": "material-spirit",
-  "version": "0.0.0-alpha.1",
+  "version": "0.0.0-alpha.2",
   "author": "Konstantin Lyakh <kostya.lyakh@gmail.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "npx sass src/material-spirit.scss dist/material-spirit.scss"
+    "build": "npx sass src/material-spirit.scss dist/material-spirit.css"
   },
   "devDependencies": {
     "sass": "^1.34.1"

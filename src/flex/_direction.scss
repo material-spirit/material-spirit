@@ -1,0 +1,22 @@
+$directions: (
+  row: row,
+  row-reverse: row-reverse,
+  col: column,
+  col-reverse: column-reverse
+);
+
+@mixin core-styles($breakpoint: null) {
+  @if($breakpoint) {
+    @each $key, $value in $directions {
+      .mas-flex-#{$key}-#{$breakpoint} {
+        flex-direction: $value !important;
+      }
+    }
+  } @else {
+    @each $key, $value in $directions {
+      .mas-flex-#{$key} {
+        flex-direction: $value !important;
+      }
+    }
+  }
+}
