@@ -1,6 +1,6 @@
 {
   "name": "material-spirit",
-  "version": "0.0.0-alpha.0",
+  "version": "0.0.0-alpha.1",
   "author": "Konstantin Lyakh <kostya.lyakh@gmail.com>",
   "license": "MIT",
   "private": false,
@@ -9,8 +9,5 @@
   },
   "devDependencies": {
     "sass": "^1.34.1"
-  },
-  "files": [
-    "dist/*.css"
-  ]
+  }
 }
