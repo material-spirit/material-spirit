@@ -4,6 +4,12 @@
 $spacing-step: 8px !default;
 $spacing-steps: 5 !default;
 
+$default-margin: (
+  handset: 16px,
+  tablet: 32px,
+  web: 0
+);
+
 $spacing-types: (
   padding: p,
   margin: m
@@ -31,7 +37,7 @@ $spacing-axis-values: (
   @include axis-spacing-styles(margin, $breakpoint);
 
   @include x-auto-spacing-styles($breakpoint);
-  //@include default-spacing($breakpoint);
+  @include default-spacing($breakpoint);
 }
 
 /// @param { String } $spacing-type Either padding or margin
@@ -99,14 +105,14 @@ $spacing-axis-values: (
   }
 }
 
-// @mixin default-spacing($breakpoint: null) {
-//   @if($breakpoint) {
-//     .mdx-p--default {
-//       padding: map.get(layout-grid.$default-margin, $breakpoint) !important;
-//     }
+@mixin default-spacing($breakpoint: null) {
+  @if($breakpoint) {
+    .mas-p-default {
+      padding: map.get($default-margin, $breakpoint) !important;
+    }
 
-//     .mdx-m--default {
-//       margin: map.get(layout-grid.$default-margin, $breakpoint) !important;
-//     }
-//   }
-// }
+    .mas-m-default {
+      margin: map.get($default-margin, $breakpoint) !important;
+    }
+  }
+}
