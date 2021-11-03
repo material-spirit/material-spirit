@@ -20,6 +20,7 @@ Also breakpoint-specific classes available. Example: `.mas-items-start-tablet`
 ---
 
 [Justify Content](https://tailwindcss.com/docs/justify-content) classes:
+- `.mas-justify-start`
 - `.mas-justify-end`
 - `.mas-justify-center`
 - `.mas-justify-between`
