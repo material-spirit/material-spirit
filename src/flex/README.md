@@ -20,6 +20,7 @@ Also breakpoint-specific classes available. Example: `.mas-items-start-tablet`
 ---
 
 [Justify Content](https://tailwindcss.com/docs/justify-content) classes:
+- `.mas-justify-start`
 - `.mas-justify-end`
 - `.mas-justify-center`
 - `.mas-justify-between`
@@ -27,3 +28,12 @@ Also breakpoint-specific classes available. Example: `.mas-items-start-tablet`
 - `.mas-justify-evenly`
 
 Also breakpoint-specific classes available. Example: `.mas-justify-center-web`
+
+
+[Grow](https://tailwindcss.com/docs/flex-grow) and [Shrink](https://tailwindcss.com/docs/flex-shrink)
+- `.mas-flex-grow`
+- `.mas-flex-grow-0`
+- `.mas-flex-shrink`
+- `.mas-flex-shrink-0`
+
+Breakpoint-specific examples: `.mas-flex-grow-handset`, `.mas-flex-grow-0-handset`

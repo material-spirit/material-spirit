@@ -4,6 +4,7 @@
 @use './display';
 @use './spacing';
 @use './text';
+@use './width';
 
 
 // Styles without breakpoints
@@ -11,6 +12,7 @@
 @include display.core-styles();
 @include spacing.core-styles();
 @include text.core-styles();
+@include width.core-styles();
 
 
 // Breakpoint-specific styles
@@ -21,12 +23,6 @@
     @include display.core-styles($bp);
     @include spacing.core-styles($bp);
     @include text.core-styles($bp);
+    @include width.core-styles($bp);
   }
 }
-
-
-// @include bp.media-query(tablet) {
-//   .test-tablet-class {
-//     color: red;
-//   }
-// }

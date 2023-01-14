@@ -1,13 +1,15 @@
 $grow-shrink-types: grow, shrink;
-$grow-shrink-values: 0, 1;
+//$grow-shrink-values: 0, 1;
 
 @mixin core-styles($breakpoint: null) {
   @if($breakpoint) {
     @each $type in $grow-shrink-types {
-      @each $value in $grow-shrink-values {
-        .mas-flex-#{$type}--#{$value}-#{$breakpoint} {
-          flex-#{$type}: $value !important;
-        }
+      .mas-flex-#{$type}-#{$breakpoint} {
+        flex-#{$type}: 1 !important;
+      }
+
+      .mas-flex-#{$type}-0-#{$breakpoint} {
+        flex-#{$type}: 0 !important;
       }
     }
   } @else {

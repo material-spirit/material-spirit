@@ -1,0 +1,20 @@
+@mixin core-styles($breakpoint: null) {
+
+  @if($breakpoint) {
+    .mas-w100-#{$breakpoint} {
+      width: 100% !important;
+    }
+  
+    .mas-max100-#{$breakpoint} {
+      max-width: 100% !important;
+    }
+  } @else {
+    .mas-w100 {
+      width: 100% !important;
+    }
+  
+    .mas-max100 {
+      max-width: 100% !important;
+    }
+  }
+}
